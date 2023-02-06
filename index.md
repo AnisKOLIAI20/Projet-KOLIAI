@@ -20,7 +20,7 @@ Pour réalisé le visuel des données réuni, j'ai décidé d'utiliser le graphi
   
 ## 3. datavisualisation avec une carte (Datawrapper) 
   
-j'ai décidé d'illustrer la densité de population avec une carte pour voir les pays les plus peuplés d'immigrant.Cette datavisualisation a été réalisé en choisissant une carte d'europe sur datawrapper et j'ai téléchargé les données avec quelque modification la premiére en texte et la deuxiemme colomne devait correspondre au nombre etc.
+j'ai décidé d'illustrer la densité de population avec une carte pour voir les pays les plus peuplés d'immigrant.Cette datavisualisation a été réalisé en choisissant une carte d'europe sur datawrapper et j'ai téléchargé les données avec quelque modification la premiére en texte et la deuxiemme colomne devait correspondre au nombre etc. Grace a la visualisation cartographique, nous pouvons visualiser les pays qui ont le plus d'immigrant.
   
   
  <iframe title="Flux d'immigration en Europe 2012" aria-label="Map" id="datawrapper-chart-xJZio" src="https://datawrapper.dwcdn.net/xJZio/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="595" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
