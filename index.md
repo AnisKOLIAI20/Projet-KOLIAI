@@ -40,32 +40,39 @@ Comme vous pouvez le voir, les pays sont coloré en cercle j'ai pris une carte d
   
    En 2021, 47.5 % d’ immigrés vivant en France sont nés en Afrique.
     
-  ## 5. Visualisation de la capitale D'Algerie, Alger avec Wikidata Query Service
+  ## 5. Visualisation de la capitale de l'Algerie, Alger avec Wikidata Query Service
   
-  Avec l'aide de de Wikidata j'ai pu visualiser cette galerie d'image qui represente ma ville natale
+  Avec l'aide de de Wikidata, j'ai pu visualiser cette galerie d'image qui represente ma ville natale et son architecture
   
-  #defaultView:ImageGrid
-#Capitale d'algerie 
+```sparql
+#defaultView:ImageGrid
+#Capitale D'Alger
+
 SELECT
   ?arr
   (SAMPLE (?titleL) AS ?title)
   (SAMPLE (?img) AS ?image)
   (SAMPLE (?coord) AS ?coordinates) {
 
-    {
-      SELECT DISTINCT ?arr {
-        ?arr  wdt:P131 wd:Q3561;}
-    }
-    # title
-    OPTIONAL { ?arr rdfs:label ?titleL filter (lang(?titleL) = "fr") }
-   
-    # image
-    OPTIONAL { ?arr wdt:P18 ?img }
-   
-    # coordinates
-    OPTIONAL { ?arr wdt:P36 ?coord }
+{
+  SELECT DISTINCT ?arr {
+    ?arr  wdt:P131 wd:Q3561;}
+}
+# title
+OPTIONAL { ?arr rdfs:label ?titleL filter (lang(?titleL) = "fr") }
 
+# image
+OPTIONAL { ?arr wdt:P18 ?img }
+
+# coordinates
+OPTIONAL { ?arr wdt:P149 ?coord }
+    
 } GROUP BY ?arr
-LIMIT 2500
+LIMIT 1500
+```
   
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0A%23Capitale%20D'Alger%0A%0ASELECT%0A%20%20%3Farr%0A%20%20(SAMPLE%20(%3FtitleL)%20AS%20%3Ftitle)%0A%20%20(SAMPLE%20(%3Fimg)%20AS%20%3Fimage)%0A%20%20(SAMPLE%20(%3Fcoord)%20AS%20%3Fcoordinates)%20%7B%0A%0A%7B%0A%20%20SELECT%20DISTINCT%20%3Farr%20%7B%0A%20%20%20%20%3Farr%20%20wdt%3AP131%20wd%3AQ3561%3B%7D%0A%7D%0A%23%20title%0AOPTIONAL%20%7B%20%3Farr%20rdfs%3Alabel%20%3FtitleL%20filter%20(lang(%3FtitleL)%20%3D%20%22fr%22)%20%7D%0A%0A%23%20image%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP18%20%3Fimg%20%7D%0A%0A%23%20coordinates%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP149%20%3Fcoord%20%7D%0A%20%20%20%20%0A%7D%20GROUP%20BY%20%3Farr%0ALIMIT%201500%20%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+
+
     
