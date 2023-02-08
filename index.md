@@ -46,7 +46,7 @@ Comme vous pouvez le voir, les pays sont coloré en cercle j'ai pris une carte d
   
 ```sparql
 #defaultView:ImageGrid
-#Capitale D'Alger
+#Capitale D'Algerie
 
 SELECT
   ?arr
