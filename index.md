@@ -7,7 +7,7 @@ En tant qu’immigrer j’ai trouvé intéressant de m’orienter vers ces jeux 
 2. [Première datavisualisation avec type chart column chart (Datawrapper)](#2-Première-datavisualisation-avec-type-chart-column-chart-Datawrapper)
 3. [datavisualisation avec une carte (Datawrapper)](#3-datavisualisation-avec-une-carte-(Datawrapper)) 
 4. [Troisième datavisualisation avec Bar chart race (Flourish)](#4troisième-datavisualisation-avec-bar-chart-race-flourish)
-5. [Visualisation d'immigré en france avec Wikidata Query Service](#5Visualisation-d'immigré-en-france-avec-Wikidata-Query-Service) 
+5. [Visualisation d'immigré en france avec Wikidata Query Service](#5-Visualisation-d'immigré-en-france-avec-Wikidata-Query-Service) 
 
 ## 1. Traitement de données sur le flux d'immigration par pays
 Le données des flux on été trouvé sur le site [open Data](https://www.data.gouv.fr/fr/#consulté). j'ai décidé de faire sortir que les information utile et interéssante tel que les pays, année, population, nombre de flux par pays etc. Quelque fois y'avais un manque de donné j'ai utilisé excel pour ajouté des information on les cherchant sur Google et on nettoyant les données et suprimer les information inutile. 
@@ -40,5 +40,32 @@ Comme vous pouvez le voir, les pays sont coloré en cercle j'ai pris une carte d
   
    En 2021, 47.5 % d’ immigrés vivant en France sont nés en Afrique.
     
-  ## 5. Visualisation d'immigré en france avec Wikidata Query Service <a name="Visualisation-d'immigré-en-france-avec-Wikidata-Query-Service"></a>
+  ## 5. Visualisation de la capitale D'Algerie, Alger avec Wikidata Query Service
+  
+  Avec l'aide de de Wikidata j'ai pu visualiser cette galerie d'image qui represente ma ville natale
+  
+  #defaultView:ImageGrid
+#Capitale d'algerie 
+SELECT
+  ?arr
+  (SAMPLE (?titleL) AS ?title)
+  (SAMPLE (?img) AS ?image)
+  (SAMPLE (?coord) AS ?coordinates) {
+
+    {
+      SELECT DISTINCT ?arr {
+        ?arr  wdt:P131 wd:Q3561;}
+    }
+    # title
+    OPTIONAL { ?arr rdfs:label ?titleL filter (lang(?titleL) = "fr") }
+   
+    # image
+    OPTIONAL { ?arr wdt:P18 ?img }
+   
+    # coordinates
+    OPTIONAL { ?arr wdt:P36 ?coord }
+
+} GROUP BY ?arr
+LIMIT 2500
+  
     
