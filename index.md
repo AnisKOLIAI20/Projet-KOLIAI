@@ -31,7 +31,7 @@ Comme vous pouvez le voir, les pays sont coloré en cercle j'ai pris une carte d
   
   **4. Troisième datavisualisation avec Bar Chart Race (Flourish)**
   
-  Pour visualiser cet ensemble de données, nous avons décidé d'utiliser Bar Chart Race sur Flourish, ce qui m'a  permit d'avoir la visualisation dynamique de l'évolution de la migrationdes au fil des années (2000 - 2012 ). Les données de l'évolution migratroire au fil des années ont été trouvées sur [INSEE]https://www.insee.fr/fr/statistiques/3633212#consulter).
+  Pour visualiser cet ensemble de données, nous avons décidé d'utiliser Bar Chart Race sur Flourish, ce qui m'a  permit d'avoir la visualisation dynamique de l'évolution de la migrationdes au fil des années (2000 - 2012 ). Les données de l'évolution migratroire au fil des années ont été trouvées sur [INSEE](https://www.insee.fr/fr/statistiques/3633212#consulter).
   
   <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/12654251"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
   
