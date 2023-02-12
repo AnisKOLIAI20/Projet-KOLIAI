@@ -1,6 +1,6 @@
 # Les flux d'immigration dans le monde 
 <a href="https://goopics.net/i/dj6acf"><img src="https://i.goopics.net/dj6acf.jpg" alt="Image"></a>
-**En tant qu’immmigrer en France j’ai trouvé intéressant de m’orienter vers ces jeux de données (les jeux de données que j'ai utilisé sont en langue française), depuis la nuit des temps l'etre humain est connu pour ces déplacaement sur terre pour différentes raisons économiques, politiques, naturelles, éducationnelles, psychologiques, institutionnelles, volontaires et diplomatiques. Le but de mon travail a été de se basé sur des recherches et statistiques récentes pour comparer la densité d'immigration de divers populations et leur évolution.** 
+**En tant qu’immmigrant en France j’ai trouvé intéressant de m’orienter vers ces jeux de données (les jeux de données que j'ai utilisé sont en langue française), depuis la nuit des temps l'etre humain est connu pour ces déplacaement sur terre pour différentes raisons économiques, politiques, naturelles, éducationnelles, psychologiques, institutionnelles, volontaires et diplomatiques. Le but de mon travail a été de se basé sur des recherches et statistiques récentes pour comparer la densité d'immigration de divers populations et leur évolution.** 
 
 # Table des matières
 1. [Traitement des données sur le flux d'immigration par pays](#1-Traitement-des-données-sur-le-flux-d'immigration-par-pays)
