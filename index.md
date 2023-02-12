@@ -76,11 +76,14 @@ LIMIT 1500
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0A%23Capitale%20D'Alger%0A%0ASELECT%0A%20%20%3Farr%0A%20%20(SAMPLE%20(%3FtitleL)%20AS%20%3Ftitle)%0A%20%20(SAMPLE%20(%3Fimg)%20AS%20%3Fimage)%0A%20%20(SAMPLE%20(%3Fcoord)%20AS%20%3Fcoordinates)%20%7B%0A%0A%7B%0A%20%20SELECT%20DISTINCT%20%3Farr%20%7B%0A%20%20%20%20%3Farr%20%20wdt%3AP131%20wd%3AQ3561%3B%7D%0A%7D%0A%23%20title%0AOPTIONAL%20%7B%20%3Farr%20rdfs%3Alabel%20%3FtitleL%20filter%20(lang(%3FtitleL)%20%3D%20%22fr%22)%20%7D%0A%0A%23%20image%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP18%20%3Fimg%20%7D%0A%0A%23%20coordinates%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP149%20%3Fcoord%20%7D%0A%20%20%20%20%0A%7D%20GROUP%20BY%20%3Farr%0ALIMIT%201500%20%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
   
   **Conclusion**
+ 
+ 
  Pour conclure, je remercie Monsieur Antoine Courtin pour la qualité de son enseignement et pour tous ses efforts fournis dans la compréhension de ces divers outils. Tous ces outils que j'ai eu la chance d'utiliser et manipuler m'ont permis de fouiller les données et de faire sortir des informations intéressantes et de faire apparaître les résultats d'un traitement de données. En plus de ça ces jeux de données pour moi à un intérêt particulier, en partant des données brutes j'ai réussi à les adapter à mes besoins, en les modifiant ce qui m'a permis de les visualiser et publier sur la page GitHub. J’ai trouvé ce projet très constructif car ça m'a permis de me confronter plus en détails à la manipulation des différents outils de la Data visualisation. 
 Cependant, les aspects négatifs que j'ai pu rencontrer lors de mon travail sont : premièrement l'impossibilité de visualiser mes jeux de données en carte par exemple le " Flux d'immigration en Europe 2012" sur RAWGraphs cet outil ne permet cette visualisation ce qui m'a amené à utiliser Datawrapper, deuxiément la difficulté de syntaxe au niveau du Markdown de GitHub ou les trois derniers grands titres ne s'affichent pas en Diez(#) m'obligeant à les faire apparaitre en étoile.(*)
 
  
  Merci.
+ 
  Anis KOLIAI
 
 
