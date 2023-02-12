@@ -1,6 +1,6 @@
 # Les flux d'immigration dans le monde 
 <a href="https://goopics.net/i/dj6acf"><img src="https://i.goopics.net/dj6acf.jpg" alt="Image"></a>
-**En tant qu’immigrer j’ai trouvé intéressant de m’orienter vers ces jeux donnés, les jeux données que j'ai utilisé sont en langue française.** 
+**En tant qu’immmigrer en France j’ai trouvé intéressant de m’orienter vers ces jeux de données (les jeux de données que j'ai utilisé sont en langue française), depuis la nuit des temps l'etre humain est connu pour ces déplacaement sur terre pour différentes raisons économiques, politiques, naturelles, éducationnelles, psychologiques, institutionnelles, volontaires et diplomatiques. Le but de mon travail a été de se basé sur des recherches et statistiques récentes pour comparer la densité d'immigration de divers populations et leur évolution.** 
 
 # Table des matières
 1. [Traitement des données sur le flux d'immigration par pays](#1-Traitement-des-données-sur-le-flux-d'immigration-par-pays)
@@ -10,7 +10,7 @@
 5. [Visualisation de la capitale de l'Algerie avec Wikidata Query Service](#5-Visualisation-avec-Wikidata-Query-Service) 
 
 ## 1. Traitement de données sur le flux d'immigration par pays
-Le données des flux on été trouvé sur le site [open Data](https://www.data.gouv.fr/fr/#consulté). j'ai décidé de faire sortir que les information utile et interéssante tel que les pays, année, population, nombre de flux par pays etc. Quelque fois y'avais un manque de donné j'ai utilisé excel pour ajouté des information on les cherchant sur Google et on nettoyant les données et suprimer les information inutile. 
+Le données des flux on été trouvé sur le site [open Data](https://www.data.gouv.fr/fr/#consulté). j'ai décidé de faire sortir que les information utile et interéssante tel que les pays, année, population, nombre de flux par pays etc. Quelque fois y'avais un manque de donnée j'ai utilisé excel pour ajouté des information on les cherchant sur Google et on nettoyant les données et suprimer les information inutile. 
 ## 2. Datavisualisation avec une column chart (Datawrapper)
 Pour réalisé le visuel des données réuni, j'ai décidé d'utiliser le graphique  "column chart" avec trois paramètres le premier c'est Refine j'ai selectionné la colomne que je voulais avec l'apparence et la couleur que j'ai choisi et aussi l'annotation et la mise en page. Ensuite, 
 
@@ -74,12 +74,14 @@ LIMIT 1500
 ```
   
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AImageGrid%0A%23Capitale%20D'Alger%0A%0ASELECT%0A%20%20%3Farr%0A%20%20(SAMPLE%20(%3FtitleL)%20AS%20%3Ftitle)%0A%20%20(SAMPLE%20(%3Fimg)%20AS%20%3Fimage)%0A%20%20(SAMPLE%20(%3Fcoord)%20AS%20%3Fcoordinates)%20%7B%0A%0A%7B%0A%20%20SELECT%20DISTINCT%20%3Farr%20%7B%0A%20%20%20%20%3Farr%20%20wdt%3AP131%20wd%3AQ3561%3B%7D%0A%7D%0A%23%20title%0AOPTIONAL%20%7B%20%3Farr%20rdfs%3Alabel%20%3FtitleL%20filter%20(lang(%3FtitleL)%20%3D%20%22fr%22)%20%7D%0A%0A%23%20image%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP18%20%3Fimg%20%7D%0A%0A%23%20coordinates%0AOPTIONAL%20%7B%20%3Farr%20wdt%3AP149%20%3Fcoord%20%7D%0A%20%20%20%20%0A%7D%20GROUP%20BY%20%3Farr%0ALIMIT%201500%20%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+ 
   
+ 
   **Conclusion**
  
  
  Pour conclure, je remercie Monsieur Antoine Courtin pour la qualité de son enseignement et pour tous ses efforts fournis dans la compréhension de ces divers outils. Tous ces outils que j'ai eu la chance d'utiliser et manipuler m'ont permis de fouiller les données et de faire sortir des informations intéressantes et de faire apparaître les résultats d'un traitement de données. En plus de ça ces jeux de données pour moi à un intérêt particulier, en partant des données brutes j'ai réussi à les adapter à mes besoins, en les modifiant ce qui m'a permis de les visualiser et publier sur la page GitHub. J’ai trouvé ce projet très constructif car ça m'a permis de me confronter plus en détails à la manipulation des différents outils de la Data visualisation. 
-Cependant, les aspects négatifs que j'ai pu rencontrer lors de mon travail sont : premièrement l'impossibilité de visualiser mes jeux de données en carte par exemple le " Flux d'immigration en Europe 2012" sur RAWGraphs cet outil ne permet cette visualisation ce qui m'a amené à utiliser Datawrapper, deuxiément la difficulté de syntaxe au niveau du Markdown de GitHub ou les trois derniers grands titres ne s'affichent pas en Diez(#) m'obligeant à les faire apparaitre en étoile.(*)
+Cependant, les aspects négatifs et les problémes que j'ai pu rencontrer lors de mon travail sont : premièrement l'impossibilité de visualiser mes jeux de données en carte par exemple le " Flux d'immigration en Europe 2012" sur RAWGraphs cet outil ne permet cette visualisation ce qui m'a amené à utiliser Datawrapper. Aussi, il fallait ajuster les données à chaque outils pour bien les visualiser. deuxiément la difficulté de syntaxe au niveau du Markdown de GitHub ou les trois derniers grands titres ne s'affichent pas en Diez(#) m'obligeant à les faire apparaitre en étoile.(*) 
 
  
  Merci.
